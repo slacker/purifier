@@ -73,7 +73,7 @@ class Purifier_Security extends Kohana_Security {
 			foreach ($str as $i => $s)
 			{
 				// Recursively clean arrays
-				$str[$i] = $s;
+				$str[$i] = Security::xss_clean($s);
 			}
 
 			return $str;
