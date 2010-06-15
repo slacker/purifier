@@ -34,7 +34,7 @@ class Purifier_Security extends Kohana_Security {
 			{
 				// Load the all of HTML Purifier right now.
 				// This increases performance with a slight hit to memory usage.
-				require_once Kohana::find_file('vendor', 'htmlpurifier/library/HTMLPurifier.auto');
+				require_once Kohana::find_file('vendor', 'htmlpurifier/library/HTMLPurifier.includes');
 			}
 
 			// Load the HTML Purifier auto loader
